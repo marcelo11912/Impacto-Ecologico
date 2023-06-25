@@ -1,6 +1,6 @@
 package impactoecologico;
 
-public class Bicicleta {
+public class Bicicleta implements IImpactoEcologico {
 
     String tipoBicicleta;
     Double tamMarco;
@@ -14,6 +14,16 @@ public class Bicicleta {
     }
 
     void ajustarAlturaSillin() {
+    }
+
+    @Override
+    public double obtenerImpactoEcologico() {
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Las bicicletas no generan carbono.";
     }
 
 }
