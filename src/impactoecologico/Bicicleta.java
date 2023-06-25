@@ -7,6 +7,13 @@ public class Bicicleta implements IImpactoEcologico {
     String materialMarco;
     int numVelocidad;
 
+    public Bicicleta(String tipoBicicleta, Double tamMarco, String materialMarco, int numVelocidad) {
+        this.tipoBicicleta = tipoBicicleta;
+        this.tamMarco = tamMarco;
+        this.materialMarco = materialMarco;
+        this.numVelocidad = numVelocidad;
+    }
+
     void pedalear() {
     }
 

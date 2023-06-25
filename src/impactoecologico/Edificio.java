@@ -45,8 +45,14 @@ public class Edificio implements IImpactoEcologico {
         return emisionesCarbono;
     }
 
-     @Override
+    @Override
     public String toString() {
-        return "La emision de carbono del edificio es: "+ this.obtenerImpactoEcologico();
+        return "La emision de carbono del "+
+                "Edificio{" + "altura=" + altura + ", numerosPisos=" + numerosPisos + ", capacidadMaxPersonas=" + capacidadMaxPersonas + ", direcci\u00f3n=" + dirección + ", uso=" + uso + '}'
+                + " es de " + this.obtenerImpactoEcologico();
     }
+
+   
+
+   
 }

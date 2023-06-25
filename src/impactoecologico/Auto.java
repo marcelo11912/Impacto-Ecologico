@@ -44,8 +44,12 @@ public class Auto implements IImpactoEcologico {
 
     @Override
     public String toString() {
-        return "La emision de carbono del auto es: "+ this.obtenerImpactoEcologico();
+        return "La emision de carbono del "
+                + "Auto{" + "velocidadMax=" + velocidadMax + ", numerPasajeros=" + numerPasajeros + ", placa=" + placa + ", numChasis=" + numChasis + ", numMotor=" + numMotor + '}'
+                + " es de " + this.obtenerImpactoEcologico();
     }
+ 
     
+   
     
 }
